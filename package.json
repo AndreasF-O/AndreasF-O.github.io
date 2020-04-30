@@ -1,6 +1,6 @@
 {
   "name": "first",
-  "homepage": "https://github.com/AndreasF-O/AndreasF-O.github.io",
+  "homepage": "https://AndreasF-O.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
