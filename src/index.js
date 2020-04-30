@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Router } from 'react-router';
+import history from './history';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -25,11 +27,14 @@ const engine = new Styletron();
 // const theme = createTheme(primitives);
 
 ReactDOM.render(
+
   <StyletronProvider value={engine}>
     <BaseProvider theme={LightTheme}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <Router history={history}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Router>
     </BaseProvider>
   </StyletronProvider>,
   document.getElementById('root')

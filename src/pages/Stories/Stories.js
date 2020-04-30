@@ -1,7 +1,10 @@
 import * as React from "react";
 import { Block } from "baseui/block";
 import Story from "./component/Story";
+import Markdown from "react-markdown";
 
+
+const markdown = "# **Stories** \n \n Just random stuff I feel like writing down";
 const stories = [
     {
         key: "First",
@@ -45,6 +48,7 @@ export default class StoryGrid extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <div style={{ 'text-align': 'center' }}><Markdown source={markdown} /></div>
                 <Block
                     display="grid"
                     gridTemplateColumns="repeat(auto-fill, minmax(280px, 1fr))"

@@ -5,9 +5,9 @@ import Me from "./Me"
 import Work from "./Work"
 import Projects from "./Projects"
 
-const Pages = ({ user }) => {
+const Pages = () => {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/Stories">
                     <Stories />
