@@ -1,3 +1,0 @@
-# Homepage Repository
-
-## Coming soon
